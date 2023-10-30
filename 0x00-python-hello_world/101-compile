@@ -1,0 +1,4 @@
+#!/bin/bash
+
+py -m compileall "$PYFILE"
+mv "__pycache__/$PYFILE"* "$PYFILE"c
