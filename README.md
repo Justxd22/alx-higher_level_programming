@@ -10,4 +10,4 @@
 
 ## Fix Checker File Permissions Issue on Windows
 
-`git update-index --chmod=+x ./*.py`
+`git update-index --add --chmod=+x ./*.py`
