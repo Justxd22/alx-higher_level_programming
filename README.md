@@ -7,3 +7,7 @@
 ![meme2](.res/meme2.jpg)  
 ![meme3](.res/meme3.jpg)  
 
+
+## Fix Checker File Permissions Issue on Windows
+
+`git update-index --chmod=+x ./*.py`
