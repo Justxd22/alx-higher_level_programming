@@ -48,7 +48,7 @@ void print_python_list(PyObject *p)
 	printf("[*] Allocated = %ld\n", alloc);
 	for (x = 0; x < s; x++)
 	{
-		item = PyList_GetItem(p, x);
+		item = PyList_GET_ITEM(p, x);
 			printf("Element %ld: ", x);
 		if (PyBytes_Check(item))
 		{
