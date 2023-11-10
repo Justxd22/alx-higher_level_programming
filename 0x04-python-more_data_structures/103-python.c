@@ -10,7 +10,7 @@
 void print_python_bytes(PyObject *p)
 {
 	const char *str = PyBytes_AsString(p);
-	Py_ssize_t size = PyBytes_Size(p) + 1, i;
+	Py_ssize_t size = PyBytes_Size(p), i;
 
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
@@ -21,6 +21,7 @@ void print_python_bytes(PyObject *p)
 
 	printf("  size: %zd\n", size);
 	printf("  trying string: %s\n", str);
+    size++;
 	printf("  first %zd bytes:", size > 10 ? 10 : size);
 
 	for (i = 0; i < (size > 10 ? 10 : size); ++i)
