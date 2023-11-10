@@ -10,7 +10,7 @@
 void print_python_bytes(PyObject *p)
 {
 	const char *str = PyBytes_AsString(p);
-	Py_ssize_t size = PyBytes_Size(p), i;
+	Py_ssize_t size = PyBytes_Size(p) + 1, i;
 
 	printf("[.] bytes object info\n");
 	if (!PyBytes_Check(p))
