@@ -74,9 +74,5 @@ void print_python_list(PyObject *p)
 		{
 			printf("str\n");
 		}
-		else
-		{
-			printf("%s\n", Py_TYPE(item)->tp_name);
-		}
 	}
 }
