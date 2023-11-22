@@ -4,3 +4,6 @@ square class
 """
 class Square:
     pass
+    """
+    square class
+    """
