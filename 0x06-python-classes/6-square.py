@@ -9,7 +9,7 @@ class Square:
     Attributes:
         __size (int): square size
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize the square instance.
         """
         if not type(size) is int:
