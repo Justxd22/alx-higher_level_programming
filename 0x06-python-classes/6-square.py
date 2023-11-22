@@ -62,9 +62,10 @@ class Square:
     def my_print(self):
         """print a square
         """
+        print("POSSSIISISI", self.__position[0] , self.__position[1])
         if self.__size == 0:
             return print()
         for i in range(self.__position[1]):
             print()
         for i in range(self.__size):
-            print(" " * self.__position[0], "#" * self.__size)
+            print("{}{}".format(" " * self.position[0], "#" * self.size))
