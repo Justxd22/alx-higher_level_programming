@@ -3,8 +3,10 @@
 
 
 import sys
+
+
 def is_safe(board, row, col, N):
-    """Check if it's safe to place a queen at board[row][col] INSPIRED SOLUTION."""
+    """Check if it's safe to place a queen at board INSPIRED SOLUTION."""
     for i in range(col):
         if board[i] == row or \
            board[i] - i == row - col or \
@@ -14,7 +16,7 @@ def is_safe(board, row, col, N):
 
 
 def solve_nqueens_util(board, col, N, solutions):
-    """Utilizes backtracking to find all solutions problem INSPIRED SOLUTION."""
+    """Utilizes backtracking to find all solutions INSPIRED SOLUTION."""
     if col == N:
         solutions.append(board[:])
         return
