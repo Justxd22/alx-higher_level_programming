@@ -4,11 +4,11 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 >>> bg.integer_validator("my_int", 12)
-
+True
 
 # basic2
 >>> bg.integer_validator("width", 89)
-
+True
 
 # basic3
 >>> bg.integer_validator("name", "John")
