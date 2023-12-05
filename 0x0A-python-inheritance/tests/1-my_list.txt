@@ -16,6 +16,25 @@
 [1, 4, 2, 4, 5]
 
 # basic3
-
 >>> my_list.print_sorted()
 [1, 2, 4, 4, 5]
+
+# basic4
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+# basic5
+>>> my_list = MyList()
+>>> my_list.append(-9)
+>>> my_list.append(-2)
+>>> my_list.append(-5)
+>>> my_list.append(-6)
+>>> my_list.print_sorted()
+[-9, -6, -5, -2]
+
+# basic6
+>>> my_list.print_sorted()
+[-9, -6, -5, -2]
+>>> print(my_list)
+[-9, -2, -5, -6]
