@@ -21,5 +21,5 @@ class Student():
 
     def reload_from_json(self, json):
         """Replace all attributes."""
-        if(json):
+        if (json):
             self.__dict__ = json

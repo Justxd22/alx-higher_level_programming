@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """PascalTriangle."""
-import json
 
 
 def pascal_triangle(n):

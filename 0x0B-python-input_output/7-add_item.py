@@ -5,31 +5,8 @@ from sys import argv
 from os.path import exists
 import json
 
-
-def save_to_json_file(my_obj, filename):
-    """
-    Write an object as json to a text file.
-
-    Parameters:
-    - my_obj: object
-    - filename: file name
-    """
-    with open(filename, mode='w', encoding='utf-8') as file:
-        json.dump(my_obj, file)
-
-
-def load_from_json_file(filename):
-    """
-    Create an object from JSON file.
-
-    Parameters:
-    - filename: file name
-
-    Returns:
-    - Python object
-    """
-    with open(filename, encoding='utf-8') as file:
-        return json.load(file)
+save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
 
 file = "add_item.json"
