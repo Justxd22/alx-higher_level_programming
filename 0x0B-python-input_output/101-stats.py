@@ -25,6 +25,9 @@ try:
             pass
 
 except KeyboardInterrupt:
+    pass
+
+finally:
     print(f"File size: {total_size}")
     for code in sorted(status_codes.keys()):
         if status_codes[code] > 0:
