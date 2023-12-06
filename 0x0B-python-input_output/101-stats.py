@@ -9,9 +9,8 @@ try:
     for i, line in enumerate(sys.stdin, 1):
         try:
             parts = line.split()
-            size = int(parts[-1])
+            total_size += int(parts[-1])
             status_code = int(parts[-2])
-            total_size += size
             if status_code in status_codes:
                 status_codes[status_code] += 1
 
