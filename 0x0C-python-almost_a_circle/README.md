@@ -50,5 +50,5 @@ All module files have specific tests in `tests/` folder
 ![doc](../.res/0x0C_Doc.png)
 
 ## Thanks for reviewing
-Here's a kitty to make your day!
-![kitty](../.res/kitty.jpg)
+Here's a kitty to make your day!  
+<img src="../.res/kitty.jpg" alt="kitty" width="300"/>
