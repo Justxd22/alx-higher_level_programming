@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 if (isNaN(parseInt(process.argv.slice(2)))) {
     console.log('Missing size');
 } 

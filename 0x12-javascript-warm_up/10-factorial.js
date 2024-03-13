@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 let n = isNaN(Number(process.argv[2])) ? 1 : Number(process.argv[2]);
 function factor (x) {
   if (x === 0) return 1;
