@@ -8,8 +8,8 @@ def main(args):
     db = MySQLdb.connect(host='localhost', user=args[1],
                          passwd=args[2], db=args[3], port=3306)
     cur = db.cursor()
-    cur.execute(f"SELECT * FROM states WHERE name like '{args[4]}'\
-                ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name like '{}'\
+                 ORDER BY id ASC".format(args[4]))
     states = cur.fetchall()
     for state in states:
         print(state)
