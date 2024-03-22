@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """Using orm."""
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship
 
-Base = declarative_base()
+x = MetaData()
+Base = declarative_base(metadata=x)
 
 
 class State(Base):
