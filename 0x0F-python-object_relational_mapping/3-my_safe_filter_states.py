@@ -12,7 +12,7 @@ def main(args):
                          passwd=args[2], db=args[3], port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM states WHERE name LIKE %s\
-                ORDER BY id ASC", (match, ))
+                ORDER BY id ASC", (args[4], ))
     states = cur.fetchall()
     for state in states:
         print(state)
