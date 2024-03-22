@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Using orm."""
+"""Fetch all using orm in sqlalchemy."""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -8,7 +8,11 @@ from model_state import Base, State
 
 
 class City(Base):
-    """Inherted from Base."""
+    """
+    Inherted from Base.
+
+    Using orm.
+    """
 
     __tablename__ = 'states'
     name = Column(String(128), nullable=False)
