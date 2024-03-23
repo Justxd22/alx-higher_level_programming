@@ -6,7 +6,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 class City(Base):
-    """ Represents row in cities table """
+    """Represents row in cities table."""
+
     __tablename__ = "cities"
     id = Column(Integer, autoincrement=True, unique=True,
                 primary_key=True, nullable=False)

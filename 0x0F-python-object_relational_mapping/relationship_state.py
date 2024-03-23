@@ -8,8 +8,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    """ clase makes state tables inherit from decleraive base
-    """
+    """Clase makes state tables inherit from decleraive base."""
+
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, nullable=False,
                 unique=True, autoincrement=True)
