@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 # send json
 
 # Send a POST request with the file contents as the body and store the response in a variable

@@ -1,3 +1,3 @@
-#!/usr/bin/bash
+#!/bin/bash
 # print req body
 curl -sL "$1"
