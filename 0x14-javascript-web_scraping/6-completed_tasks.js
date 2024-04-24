@@ -10,7 +10,7 @@ request(link, (error, response, body) => {
     }
     let users = {};
     const json = JSON.parse(body);
-    json.array.forEach(task => {
+    json.forEach(task => {
         if (task.completed !== true) return;
         if (users[task.userId] === undefined) {
             users[task.userId] = 1;
